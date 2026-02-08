@@ -33,7 +33,7 @@ max_blast = 0
 blast_count = 0
 for i in range(n):
     for j in range(n):
-        if grid[i][j] != current_block and not visited[i][j]:
+        if not visited[i][j]:
             current_block = grid[i][j]
             current_blast = dfs(i, j)
             max_blast = max(current_blast, max_blast)
