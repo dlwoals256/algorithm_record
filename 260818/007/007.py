@@ -3,8 +3,8 @@ time = int(time)
 
 class Solution:
     def __init__(self, code, point, time):
-        self.code = secret_code
-        self.point = meeting_point
+        self.code = code
+        self.point = point
         self.time = time
 
 solution = Solution(secret_code, meeting_point, time)
