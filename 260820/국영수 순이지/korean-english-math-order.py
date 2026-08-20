@@ -20,7 +20,7 @@ class Student:
 
 students = [Student(name[i], korean[i], english[i], math[i]) for i in range(n)]
 
-students = sorted(students, key=lambda x: (x.korean, x.english, x.math), reverse=True)
+students = sorted(students, key=lambda x: (-x.korean, -x.english, -x.math))
 
 for student in students:
     print(student.name, student.korean, student.english, student.math)
