@@ -1,8 +1,11 @@
 n = int(input())
 
-strs = [input() for _ in range(n)]
+sum = 0
+cnt = 0
 
-sum = sum([len(s) for s in strs])
-cnt = len([s for s in strs if s[0] == "a"])
+for i in range(n):
+    s = input()
+    sum += len(s)
+    cnt += 1 if s[0] == "a" else 0
 
 print(sum, cnt)
