@@ -1,4 +1,6 @@
 n = int(input())
-strs = [input() for _ in range(n)]
+strs = ""
+for i in range(n):
+    strs += input()
 
-print("".join(strs))
+print(strs)
